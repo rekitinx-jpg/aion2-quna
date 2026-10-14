@@ -23,6 +23,8 @@
           <div class="menu-group"><span class="eyebrow">Get stronger</span>
             <a href="combat-power.html">Combat Power</a>
             <a href="item-level.html">Item Level</a>
+            <a href="stats.html">Stats &amp; Best-in-Slot</a>
+            <a href="stigmas.html">Stigmas &amp; Builds</a>
             <a href="arcana.html">Arcana</a>
             <a href="pets.html" aria-current="page">Pets &amp; Genus Insight</a>
           </div>
@@ -106,22 +108,92 @@
     <div class="callout warn"><p><strong>Don't lock anything before level 10.</strong> Every lock makes each reroll cost more and earns less EXP. Level the board first, then lock the good rolls.</p></div>
   </section>
 
-  <section aria-labelledby="stat-h">
-    <h2 id="stat-h">Which stats to keep</h2>
-    <div class="prose">
-      <ul>
-        <li><strong>Offence first:</strong> Double Chance, Attack Bonus, Boss Attack, Critical Hit and Accuracy Bonus are the rolls guides rank highest.</li>
-        <li><strong>Then defence:</strong> Defense Bonus and Evasion for tanks and PvP.</li>
-        <li><strong>Avoid genus-specific lines</strong> such as "Cogni Accuracy". They only work against monsters of that genus.</li>
-      </ul>
+  <section aria-labelledby="odds-h">
+    <h2 id="odds-h">Grade odds by board level</h2>
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Board level</th><th>Epic</th><th>Unique</th><th>Heroic</th></tr></thead>
+        <tbody>
+          <tr><td class="n">5</td><td class="n">5%</td><td class="n">—</td><td class="n">—</td></tr>
+          <tr><td class="n">7</td><td class="n">30%</td><td class="n">1%</td><td class="n">—</td></tr>
+          <tr><td class="n">9</td><td class="n">39%</td><td class="n">10%</td><td class="n">1%</td></tr>
+          <tr><td class="n">10</td><td class="n">30%</td><td class="n">15%</td><td class="n">5%</td></tr>
+        </tbody>
+      </table>
     </div>
+    <p class="lead">Below level 9, Heroic can't roll at all, so anything you lock early will almost certainly be replaced. Rough value ranges: Unique lines 1–2%, Heroic 1.5–3%.</p>
+  </section>
+
+  <section aria-labelledby="stat-h">
+    <h2 id="stat-h">Best stats: what each slot can roll</h2>
+    <p class="lead">Each of the 9 slots draws from its own pool. Slot 4 is the most important: it's the only one with big damage multipliers, and what it can roll depends on the board.</p>
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Board</th><th>Slot 4 damage lines</th><th>Best for</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Special</strong></td><td><strong>Double Chance</strong> (up to ~3%), Damage Boost, Crit Damage Boost, Front / Back Attack Damage Boost</td><td>Everyone. The only place Double Chance rolls on global.</td></tr>
+          <tr><td>Varian</td><td>Front Attack Damage Boost, Back Attack Damage Boost</td><td>Front for most classes, Back for Assassins</td></tr>
+          <tr><td>Natura</td><td>Multi-hit Chance, Perfect Chance</td><td>Extra hits or max-roll damage</td></tr>
+          <tr><td>Fera</td><td>Weapon Damage Boost, Damage Boost</td><td>Weapon-heavy damage classes</td></tr>
+          <tr><td>Cogni</td><td>Critical Damage Boost, Damage Boost</td><td>Crit builds</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead">Every monster board's slot 4 can also roll PvE Damage Boost (about 2–4%, great for PvE, nothing in PvP) and that genus's own Damage Boost (only against that genus).</p>
+
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Slots</th><th>What to keep (damage build)</th></tr></thead>
+        <tbody>
+          <tr><td class="n">4</td><td>The best damage line for your class from the table above</td></tr>
+          <tr><td class="n">1, 5</td><td>Max Attack or Attack Bonus</td></tr>
+          <tr><td class="n">3, 6, 9</td><td>Critical Hit or Accuracy Bonus. Stop taking Critical Hit once your sheet shows 50%.</td></tr>
+          <tr><td class="n">7</td><td>Damage Tolerance or Endurance; low priority for PvE</td></tr>
+          <tr><td class="n">2, 8</td><td>HP or defence; lowest priority for damage dealers</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><p><strong>Lock order at board level 10:</strong> slot 4 first, then 1 and 5, then 3, 6 and 9, then 7, then 2 and 8. Lock a line for its stat and value, not its colour: a good Unique beats a bad Heroic. Locks get expensive fast (no locks: 4 crystals + 1,000 Kinah; 1 lock: 8 + 2,000; 8 locks: 396 + 99,000), so lock only lines you'd be upset to lose.</p></div>
+    <div class="callout warn"><p>Korean and Taiwanese guides put Double Chance on Special slots 3 and 9. That layout isn't on global yet. Global guides agree it's Special slot 4 only. NCSOFT hasn't published a global odds table.</p></div>
+  </section>
+
+  <section aria-labelledby="owned-h">
+    <h2 id="owned-h">Owned effects by pet level</h2>
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Genus</th><th>Pet level 1</th><th>Level 2</th><th>Level 3</th></tr></thead>
+        <tbody>
+          <tr><td>Cogni</td><td>HP +10</td><td>HP +20, Crit Hit +1</td><td>HP +30, Crit Hit +2, Might +1</td></tr>
+          <tr><td>Fera</td><td>Mount speed +1</td><td>Mount speed +2, Accuracy +1</td><td>Mount speed +3, Accuracy +2, Dexterity +1</td></tr>
+          <tr><td>Natura</td><td>Stamina +300</td><td>Stamina +600, Crit Resist +1</td><td>Stamina +900, Crit Resist +2, Precision +1</td></tr>
+          <tr><td>Varian</td><td>Sprint cost −0.1%</td><td>Sprint cost −0.2%, Evasion +1</td><td>Sprint cost −0.3%, Evasion +2, Constitution +1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead">Per pet, and they stack across every pet you own. Special pets give no owned effect.</p>
+  </section>
+
+  <section aria-labelledby="mile-h">
+    <h2 id="mile-h">Collection milestones</h2>
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Pets owned</th><th>Reward</th></tr></thead>
+        <tbody>
+          <tr><td>5, then every 10 (10, 20 … 190), except multiples of 50</td><td>100 Soul Crystals</td></tr>
+          <tr><td>50, 100, 150, 200</td><td>10 Empathy Candy</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead">That's 1,700 Soul Crystals and 40 Empathy Candy by 200 pets, another reason to unlock many pets before levelling any.</p>
   </section>
 
   <section aria-labelledby="farm-h">
     <h2 id="farm-h">Getting souls and crystals</h2>
     <ol class="steps">
       <li><div><h3>Start with your first pet</h3><p>A story quest around level 10–11 lets you pick one of three Fera pets: Fossa, Armadon or Tog.</p></div></li>
-      <li><div><h3>Farm common, low-level monsters</h3><p>Souls drop from monsters of each species. Species with many low-level spawns are the quickest new unlocks. The pet menu's Source tab shows where each soul drops.</p></div></li>
+      <li><div><h3>Farm common, low-level monsters</h3><p>Souls drop from monsters of each species. Species with many low-level spawns are the quickest new unlocks. The pet menu's Source tab shows where each soul drops. A suggested order is Cogni, Natura, Fera, then Varian, taking every genus where camps overlap.</p></div></li>
+      <li><div><h3>Use the densest camps</h3><p><strong>Elyos (Verteron):</strong> Eternal Isle is the best single camp (Kerubar, Kerubian, Kerubiel), then Contaminated Marsh and Crimson Isle. <strong>Asmodian (Altgard):</strong> Fafnite Deposit is the best (Swarm, a Varian pet, spawns there in big numbers), then Western Gribade Highland and Purifying Forest. Camp suggestions come from one spawn-count guide.</p></div></li>
+      <li><div><h3>Enemy-faction pets need a Spacetime Rift</h3><p>Most of the other faction's pets only spawn in their region. Rifts open every 4 hours (server time) and stay open about an hour. Avoid the guards near the angel icons.</p></div></li>
       <li><div><h3>Check the other sources</h3><p>The Black Cloud Merchant (rotating stock), Hidden Cubes, chests, events and the Daeva Pass all give souls.</p></div></li>
       <li><div><h3>Collect Soul Crystals for rerolls</h3><p>They come from extra souls of maxed pets, Duty Missions, Hidden Cubes, collection milestones and the Shugo Festival shop.</p></div></li>
       <li><div><h3>Save rainbow crystals for the Special board</h3><p>Rainbow Soul Crystals work on any board. Special pets can't be farmed in the world, so their board only levels through Analysis.</p></div></li>
@@ -148,6 +220,8 @@
       <li><a href="https://wikily.gg/aion-2/genus-insight" target="_blank" rel="noopener">Wikily: Genus Insight and collection rewards</a></li>
       <li><a href="https://allthings.how/aion-2-genus-insight-how-it-works-and-the-best-stats-to-roll/" target="_blank" rel="noopener">AllThings.How: Genus Insight and best stats</a></li>
       <li><a href="https://raidrelay.com/aion-2-pets-genus-guide" target="_blank" rel="noopener">Raid Relay: Pet farming and Genus Insight (global, Oct 13)</a></li>
+      <li><a href="https://showgamer.com/en/guides/6389-poznanie-roda-v-aion-2-luchshie-harakteristiki-pitomcev-i-chto-vybirat" target="_blank" rel="noopener">ShowGamer: Best Genus Insight stats (global)</a></li>
+      <li><a href="https://thegameswiki.com/aion-2/wiki/genus-insight" target="_blank" rel="noopener">The Games Wiki: Genus Insight</a></li>
       <li><a href="https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac932a8fa34c1011d627bc9" target="_blank" rel="noopener">Official: Server Transfer notice</a></li>
     </ul>
     <p class="disclaimer">Unofficial fan page. Not affiliated with or endorsed by NCSOFT. AION is a trademark of NCSOFT Corporation.</p>

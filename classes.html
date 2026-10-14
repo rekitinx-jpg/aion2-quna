@@ -35,6 +35,8 @@
           <div class="menu-group"><span class="eyebrow">Get stronger</span>
             <a href="combat-power.html">Combat Power</a>
             <a href="item-level.html">Item Level</a>
+            <a href="stats.html">Stats &amp; Best-in-Slot</a>
+            <a href="stigmas.html">Stigmas &amp; Builds</a>
             <a href="arcana.html">Arcana</a>
             <a href="pets.html">Pets &amp; Genus Insight</a>
           </div>
@@ -135,6 +137,17 @@ const CLASSES = [
     good: "Party heal, party shield and cooldown buffs, with enough damage and self-healing to solo.", bad: "Does neither healing nor damage at full strength.",
     best: "Support players who still want to hit things" },
 ];
+// Consensus PvE Stigmas and stat priority (see stigmas.html and stats.html for sources)
+const BUILD = {
+  Gladiator: ["Lunge Stance, Rage Burst, Zikel's Blessing + Lifestealing Blade", "Front Attack › Double Chance › Weapon / Crit Dmg"],
+  Templar: ["Taunt, Battlefield Banner, Doom Shield + Empyrean Lord's Punishment", "Front Attack › Double Chance › Weapon / Crit Dmg"],
+  Assassin: ["Illusive Clone, Swift Contract, Triniel's Dagger, Savage Fang", "Back Attack › Double Chance › Crit Hit › Weapon / Crit Dmg"],
+  Ranger: ["Vaizel's Authority, Bow of Blessing, Supporting Fire + Griffon Arrow", "Front Attack › Weapon Dmg › Crit / Damage"],
+  Sorcerer: ["Element Enhancement, Fire Wall, Cold Storm + Delayed Explosion", "Weapon Dmg › Front Attack › Crit Dmg › Cooldown"],
+  Spiritmaster: ["Ancient Spirit, Spirit's Benediction, Jointstrike: Corrode, Flame Blessing", "Double Chance › Damage › Weapon › Crit Dmg"],
+  Cleric: ["Earth Punishment, Light of Protection, Noble Aura + Prayer of Amplification", "Attack › Cooldown › Weapon / Crit Dmg"],
+  Chanter: ["Undefeated Mantra, Sprint Mantra, Power of the Storm + Marchutan's Wrath", "Double Chance › Front/Back Attack › Weapon › Accuracy"],
+};
 const TAG = { easy: ["chip high", "Easy to learn"], solo: ["chip mid", "Solo"], group: ["chip mid", "Groups"], pvp: ["chip cash", "PvP"] };
 const $ = (s) => document.querySelector(s);
 $("#classes").innerHTML = CLASSES.map(c => `
@@ -149,6 +162,10 @@ $("#classes").innerHTML = CLASSES.map(c => `
     <p><strong>Strong:</strong> ${c.good}</p>
     <p><strong>Weak:</strong> ${c.bad}</p>
     <p><strong>Best for:</strong> ${c.best}</p>
+    <dl>
+      <dt><a href="stigmas.html#builds-h">Stigmas</a></dt><dd>${BUILD[c.name][0]}</dd>
+      <dt><a href="stats.html#class-h">Stats</a></dt><dd>${BUILD[c.name][1]}</dd>
+    </dl>
   </article>`).join("");
 let f = "all";
 try { const s = localStorage.getItem("at-classf"); if (s) f = s; } catch (e) {}
