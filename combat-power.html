@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AionTech · AION 2 Combat Power Guide</title>
+<meta name="description" content="How to raise Combat Power in AION 2: every CP source, the order to upgrade in, a daily and weekly checklist, and the mistakes that waste materials.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+.check { display: grid; gap: 8px; }
+.check label { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); cursor: pointer; }
+.check input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--accent); }
+.check label span small { display: block; color: var(--muted); font-size: .82rem; }
+.check input:checked + span { color: var(--muted); text-decoration: line-through; }
+.panel-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.panel-head button { font: inherit; font-size: .8rem; border: 1px solid var(--line); background: var(--bg); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+.vs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.vs .big { font-family: var(--font-num); font-size: 1.4rem; color: var(--accent); }
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Site">
+  <div class="wrap">
+    <a class="brand" href="./">Aion<span>Tech</span></a>
+    <ul>
+      <li><a href="./">Skins</a></li>
+      <li><a href="combat-power.html" aria-current="page">Combat Power</a></li>
+      <li><a href="item-level.html">Item Level</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Guide · Level 45 and up · Updated Oct 14, 2026</span>
+    <h1>Raise your Combat Power</h1>
+    <p>Combat Power (CP) is the game's estimate of how strong your character really is. Gear is only part of it. Most players who feel stuck have high item level and half-empty side systems, and those side systems are usually the cheapest CP you can get.</p>
+    <div class="summary">
+      <a href="#sources-h">9 sources of CP</a>
+      <a href="#order-h">Upgrade order</a>
+      <a href="#routine-h">Daily checklist</a>
+      <a href="#mistakes-h">Mistakes to avoid</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section aria-labelledby="vs-h">
+    <h2 id="vs-h">Combat Power vs Item Level</h2>
+    <div class="vs">
+      <div class="panel">
+        <span class="eyebrow">Item Level</span>
+        <p>Adds up your equipped gear: base item level, enhancement, Manastones, runes and Arcana. Dungeons and raids use it as an entry requirement. It decides <strong>what you can enter</strong>.</p>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">Combat Power</span>
+        <p>Counts your actual stats from every system, including Daevanion, Stigmas, skills, pets and collections. It decides <strong>how fast you clear and how long you survive</strong>.</p>
+      </div>
+    </div>
+    <div class="callout">
+      <p><strong>Same gear, very different strength.</strong> One reported comparison: a character at about <span class="num">1,945</span> item level had roughly <span class="num">90,000</span> CP, while another at <span class="num">2,096</span> item level had only about <span class="num">80,000</span>. The second player had higher gear but empty Daevanion, Stigma and pet progress.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="sources-h">
+    <h2 id="sources-h">Where Combat Power comes from</h2>
+    <p class="lead">Payoff is a rough guide to how much CP each system gives for the effort at level 45. It shifts as you progress.</p>
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Source</th><th>What to do</th><th>What it costs</th><th>Payoff</th></tr></thead>
+        <tbody>
+          <tr><td>Gear and enhancement</td><td>Wear the highest item level piece in every slot. Enhance to +10, which never fails.</td><td>Kinah, Enhance Stones</td><td><span class="chip high">High</span></td></tr>
+          <tr><td>Daevanion Board</td><td>Spend Daevanion points as soon as you get them. They come from sealed dungeons, regional quests and Shugo Festa rewards.</td><td>Time only; nodes can be reset</td><td><span class="chip high">High</span></td></tr>
+          <tr><td>Stigmas</td><td>Level only the Stigmas you actually use, with Stigma Shards from daily duties, supply turn-ins, PvP and the Abyss.</td><td>Stigma Shards</td><td><span class="chip high">High</span></td></tr>
+          <tr><td>Arcana</td><td>Fill all five Arcana slots once Transcendence opens at 1,600 item level. Arcana raise item level too.</td><td>Transcendence runs</td><td><span class="chip high">High</span></td></tr>
+          <tr><td>Skills</td><td>Put skill points into your rotation first: damage, then buffs, then defensive skills.</td><td>Skill points</td><td><span class="chip mid">Medium</span></td></tr>
+          <tr><td>Manastones and Soul Binding</td><td>Fill every Manastone slot. On gold gear you will keep, Soul Binding adds extra lines, including skill levels.</td><td>Kinah, Soul Codex</td><td><span class="chip mid">Medium, high late</span></td></tr>
+          <tr><td>Pets and Genus Insight</td><td>Collect pets and upgrade them. Pet Souls drop from boxes when you hunt the matching monster type.</td><td>Time; compounds over weeks</td><td><span class="chip mid">Medium</span></td></tr>
+          <tr><td>Collections: wings, skins, titles</td><td>Owning and equipping them both add stats. Weapon skins add damage stats, armor skins add defense. See the <a href="./">skins list</a> for Quna options.</td><td>Mostly free; some Quna</td><td><span class="chip low">Low, permanent</span></td></tr>
+          <tr><td>Pantheon</td><td>Display Colossus and Statues from the Nightmare trade shop, and Artworks from Substance Morph or Conquest drops.</td><td>Nightmare currency</td><td><span class="chip low">Low</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="order-h">
+    <h2 id="order-h">The order to upgrade in</h2>
+    <p class="lead">Free systems first, then the pieces you keep longest. Each step builds on the one before it.</p>
+    <ol class="steps">
+      <li><div><h3>Spend everything that's free</h3><p>Daevanion points, skill points and Stigma Shards cost no gear drops and no luck. Empty these every time you log in.</p></div></li>
+      <li><div><h3>Weapon to +10</h3><p>Your main weapon gives the most CP per enhancement. Every attempt up to +10 succeeds, so the only cost is materials.</p></div></li>
+      <li><div><h3>Amulet and belt: +10, then Substance Morph</h3><p>Take the piece off, morph it to the next grade (Rare, then Epic, then Unique), and enhance it again. At Unique each is item level 65. Morph resets enhancement to +0, so stop enhancing once it's Unique.</p></div></li>
+      <li><div><h3>Start pets early</h3><p>Genus Insight builds up slowly, so the sooner you start collecting, the more it pays off later.</p></div></li>
+      <li><div><h3>Cheap Manastones everywhere</h3><p>Fill every slot with low-grade stones now. Keep your best rolls for gold pieces you won't replace soon; changing gear loses the stones.</p></div></li>
+      <li><div><h3>Soul Binding on keepers</h3><p>After level 45, bind only gold gear you plan to keep. Costs climb each step, up to about 632,000 Kinah at step 10, and bound items can't be traded.</p></div></li>
+      <li><div><h3>Switch focus to CP around 2,100 item level</h3><p>Once you can enter the late dungeons, Soul Binding and better Manastones raise CP faster than chasing item level. Item level keeps rising as you farm.</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="routine-h">
+    <h2 id="routine-h">Daily and weekly checklist</h2>
+    <p class="lead">Daily reset is reported at 07:00 UTC, and weekly reset on Wednesday at the same time. Your ticks are saved in this browser and clear themselves at each reset. Limits marked server-wide are shared by all your characters on that server, so alts there don't get extra.</p>
+    <div class="grid2">
+      <div class="panel">
+        <div class="panel-head"><h3>Every day</h3><button type="button" data-clear="daily">Clear</button></div>
+        <div class="check" data-list="daily">
+          <label><input type="checkbox" id="d-duty"><span>Duty Missions<small>Reported 5 per day, server-wide.</small></span></label>
+          <label><input type="checkbox" id="d-odyle"><span>Spend Odyle Energy before it caps<small>Refills 15 every 3 hours; cap 560, or 840 with membership. Most endgame reward cubes cost 40.</small></span></label>
+          <label><input type="checkbox" id="d-nightmare"><span>Nightmare runs<small>2 new attempts per day, stacking up to 14, so you can skip days.</small></span></label>
+          <label><input type="checkbox" id="d-shugo"><span>Shugo Festa keys<small>Shared server-wide, about 2–3 per day. Trade rewards for Daevanion crystals.</small></span></label>
+          <label><input type="checkbox" id="d-dungeon"><span>Daily dungeon<small>Main source of Enhance Stones. Entries are shared per server.</small></span></label>
+          <label><input type="checkbox" id="d-free"><span>Spend free points<small>Daevanion points, skill points, Stigma Shards.</small></span></label>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Before Wednesday reset</h3><button type="button" data-clear="weekly">Clear</button></div>
+        <div class="check" data-list="weekly">
+          <label><input type="checkbox" id="w-expedition"><span>Expedition dungeons<small>Krao Cave, Draupnir, and the higher ones your item level allows.</small></span></label>
+          <label><input type="checkbox" id="w-trial"><span>Ascension Trial entries</span></label>
+          <label><input type="checkbox" id="w-subjugation"><span>Subjugation tickets</span></label>
+          <label><input type="checkbox" id="w-quests"><span>Weekly quests and Exploration rewards</span></label>
+          <label><input type="checkbox" id="w-abyss"><span>Abyss time<small>Also a Stigma Shard source.</small></span></label>
+          <label><input type="checkbox" id="w-supply"><span>Supply Requests<small>Turn in old gear for AP and stones instead of throwing it away.</small></span></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="mistakes-h">
+    <h2 id="mistakes-h">Mistakes that waste materials</h2>
+    <div class="prose">
+      <ul>
+        <li><strong>Watching item level only.</strong> If your item level is high and your CP is low, the gap is in Daevanion, Stigmas or pets, not gear.</li>
+        <li><strong>Enhancing gear you're about to replace.</strong> Keep leveling gear at low enhancement. Use Gear Transfer to move enhancement to a better piece of the same type.</li>
+        <li><strong>Pushing past +10 too early.</strong> From +11, attempts can fail and cost climbs fast. Do it only on pieces you'll keep for a long time.</li>
+        <li><strong>Putting your best Manastones on temporary gear.</strong> They are lost when the piece is replaced or extracted.</li>
+        <li><strong>Leveling every Stigma.</strong> Shards are limited. Only level the ones in your setup.</li>
+        <li><strong>Letting Odyle Energy cap.</strong> Anything over the cap is lost.</li>
+      </ul>
+    </div>
+    <div class="callout warn"><p>NCSOFT hasn't published exact CP formulas or every success rate for the global version. Numbers here come from community testing and may change with patches. Check the in-game preview before risky upgrades.</p></div>
+  </section>
+
+  <section aria-labelledby="src-h" class="sources">
+    <h2 id="src-h">Sources</h2>
+    <p>Written for AionTech from these guides, compared and checked against each other:</p>
+    <ul>
+      <li><a href="https://timesaver.gg/blog/aion-2-combat-power-gear-guide" target="_blank" rel="noopener">TimeSaver: Combat Power vs Gear Score</a></li>
+      <li><a href="https://game8.co/games/Aion-2/archives/624416" target="_blank" rel="noopener">Game8: How to increase Combat Power</a></li>
+      <li><a href="https://daevaguides.com/en/guides/gear-progression/" target="_blank" rel="noopener">Daeva Guides: Gear progression</a></li>
+      <li><a href="https://skycoach.gg/blog/aion-2/articles/combat-power-guide" target="_blank" rel="noopener">Skycoach: Combat Power guide</a></li>
+      <li><a href="https://www.aion2-wiki.wiki/guide/aion-2-how-to-increase-combat-power" target="_blank" rel="noopener">AION 2 Wiki: Combat Power</a></li>
+      <li><a href="https://metabot.gg/en/aion-2/guides/daily-weekly-checklist" target="_blank" rel="noopener">Metabot: Daily and weekly checklist</a></li>
+      <li><a href="https://www.keengamer.com/articles/guides/aion-2-daily-and-weekly-checklist-what-to-do-before-each-reset/" target="_blank" rel="noopener">KeenGamer: Daily and weekly checklist</a></li>
+      <li><a href="https://www.inven.co.kr/board/aion2/6444/310" target="_blank" rel="noopener">Inven (KR): Raising CP after level 45</a></li>
+      <li><a href="https://www.playforum.net/news/articleView.html?idxno=633300" target="_blank" rel="noopener">PlayForum (KR): CP 1,000 to 2,000</a></li>
+    </ul>
+    <p class="disclaimer">Unofficial fan page. Not affiliated with or endorsed by NCSOFT. AION is a trademark of NCSOFT Corporation.</p>
+  </section>
+</main>
+
+<script>
+// Checklist ticks reset at 07:00 UTC daily and Wednesday 07:00 UTC weekly.
+function periodKey(kind) {
+  const now = new Date(Date.now() - 7 * 3600e3);              // shift so the day starts at 07:00 UTC
+  if (kind === "daily") return now.toISOString().slice(0, 10);
+  const d = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 4) % 7));    // back to the most recent Wednesday
+  return "w" + d.toISOString().slice(0, 10);
+}
+function load(kind) {
+  try { const s = JSON.parse(localStorage.getItem("at-" + kind) || "{}"); return s.key === periodKey(kind) ? s.ids : []; } catch (e) { return []; }
+}
+function save(kind, ids) {
+  try { localStorage.setItem("at-" + kind, JSON.stringify({ key: periodKey(kind), ids })); } catch (e) {}
+}
+document.querySelectorAll(".check").forEach(list => {
+  const kind = list.dataset.list, done = load(kind);
+  list.querySelectorAll("input").forEach(cb => {
+    cb.checked = done.includes(cb.id);
+    cb.addEventListener("change", () => save(kind, [...list.querySelectorAll("input:checked")].map(x => x.id)));
+  });
+});
+document.querySelectorAll("[data-clear]").forEach(b => b.addEventListener("click", () => {
+  const list = document.querySelector(`.check[data-list="${b.dataset.clear}"]`);
+  list.querySelectorAll("input").forEach(cb => cb.checked = false);
+  save(b.dataset.clear, []);
+}));
+</script>
+</body>
+</html>

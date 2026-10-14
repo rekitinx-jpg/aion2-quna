@@ -3,134 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AionTech</title>
+<title>AionTech · AION 2 Skins: Quna or Cash?</title>
 <meta name="description" content="Unofficial AION 2 fan guide: which skins, weapons, wings and accessories can be bought with Quna, which are real-money only, and what they cost.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
-<style>
-/* Layout: a single reading column; Elyos daylight in light theme, Asmodian night in dark. Quna = gold, cash = rose. */
-:root {
-  --bg: #f3f5f9;
-  --surface: #ffffff;
-  --line: #d9dee8;
-  --fg: #1b2233;
-  --muted: #5d667a;
-  --accent: #a77a14;      /* Quna gold */
-  --accent-soft: #f6ecd2;
-  --cash: #b23a5b;        /* real money */
-  --cash-soft: #f7dfe6;
-  --sky: #dfe8f5;
-  --font-display: "Marcellus SC", "Palatino Linotype", Georgia, serif;
-  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
-  --font-num: "IBM Plex Mono", ui-monospace, Consolas, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #12111c; --surface: #1b1a29; --line: #2e2c42; --fg: #e8e6f2; --muted: #a09cb8;
-    --accent: #e2b852; --accent-soft: #352c17; --cash: #f0809f; --cash-soft: #3a1c27; --sky: #1f1d33;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #12111c; --surface: #1b1a29; --line: #2e2c42; --fg: #e8e6f2; --muted: #a09cb8;
-  --accent: #e2b852; --accent-soft: #352c17; --cash: #f0809f; --cash-soft: #3a1c27; --sky: #1f1d33;
-  color-scheme: dark;
-}
-* { box-sizing: border-box; }
-body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
-.wrap { max-width: 980px; margin: 0 auto; padding-inline: 16px; padding-block: 0 64px; }
-a { color: var(--accent); }
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-h1, h2 { font-family: var(--font-display); font-weight: 400; text-wrap: balance; line-height: 1.15; margin: 0; }
-h2 { font-size: 1.6rem; }
-.eyebrow { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-.num { font-family: var(--font-num); font-variant-numeric: tabular-nums; }
-
-/* hero */
-.hero { background: linear-gradient(180deg, var(--sky), var(--bg)); border-bottom: 1px solid var(--line); }
-.hero .wrap { padding-block: 48px 36px; display: grid; gap: 14px; }
-.hero h1 { font-size: clamp(2.4rem, 7vw, 4rem); }
-.hero h1 .q { color: var(--accent); }
-.hero h1 .c { color: var(--cash); }
-.hero p { max-width: 62ch; margin: 0; color: var(--muted); }
-.summary { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
-.summary span { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: .9rem; }
-
-section { margin-top: 44px; display: grid; gap: 16px; }
-section > p { margin: 0; max-width: 68ch; color: var(--muted); }
-
-/* chips */
-.chip { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 2px 10px; font-size: .8rem; font-weight: 600; white-space: nowrap; }
-.chip::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
-.chip.quna { background: var(--accent-soft); color: var(--accent); }
-.chip.cash { background: var(--cash-soft); color: var(--cash); }
-.chip.both { background: linear-gradient(90deg, var(--accent-soft) 50%, var(--cash-soft) 50%); color: var(--fg); }
-.chip.both::before { background: linear-gradient(90deg, var(--accent) 50%, var(--cash) 50%); }
-
-/* event banner */
-.event { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: grid; gap: 14px; }
-.event-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: baseline; }
-.countdown { font-family: var(--font-num); font-size: 1.05rem; color: var(--accent); }
-.event-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
-.group { border-top: 1px solid var(--line); padding-top: 10px; min-width: 0; }
-.group h3 { margin: 0 0 6px; font-size: .95rem; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
-.group ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .92rem; }
-
-/* filters + table */
-.filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.filters input, .filters select { font: inherit; font-size: .95rem; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); }
-.filters input { flex: 1 1 220px; min-width: 0; }
-.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-.seg button { font: inherit; font-size: .9rem; border: 0; background: var(--surface); color: var(--muted); padding: 8px 12px; cursor: pointer; }
-.seg button + button { border-left: 1px solid var(--line); }
-.seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
-.table-box { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
-table { width: 100%; border-collapse: collapse; font-size: .94rem; min-width: 560px; }
-th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
-th { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-tr:last-child td { border-bottom: 0; }
-td.price { white-space: nowrap; }
-td .note { display: block; color: var(--muted); font-size: .8rem; }
-.item { display: flex; gap: 12px; align-items: center; min-width: 0; }
-.thumb { flex: 0 0 56px; width: 56px; height: 56px; border-radius: 10px; border: 1px solid var(--line); background: var(--sky); object-fit: cover; display: grid; place-items: center; font-family: var(--font-display); color: var(--muted); font-size: 1.1rem; padding: 0; cursor: default; }
-button.thumb { cursor: zoom-in; overflow: hidden; }
-button.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-dialog { border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--fg); padding: 12px; max-width: min(92vw, 720px); }
-dialog::backdrop { background: rgba(10, 8, 20, .7); }
-dialog img { display: block; max-width: 100%; max-height: 75vh; border-radius: 10px; margin: 0 auto; }
-dialog p { margin: 10px 4px 2px; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
-dialog button { font: inherit; border: 1px solid var(--line); background: var(--bg); color: var(--fg); border-radius: 999px; padding: 4px 14px; cursor: pointer; }
-.count { color: var(--muted); font-size: .9rem; }
-.empty { padding: 24px; color: var(--muted); text-align: center; }
-
-/* calculator */
-.calc { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 12px; min-width: 0; }
-.panel label { font-size: .85rem; color: var(--muted); display: grid; gap: 4px; }
-.panel input { font: inherit; font-family: var(--font-num); padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); width: 100%; }
-.result { font-family: var(--font-num); font-size: 1.6rem; color: var(--accent); }
-.result small { display: block; font-family: var(--font-body); font-size: .85rem; color: var(--muted); }
-.presets { display: flex; flex-wrap: wrap; gap: 6px; }
-.presets button { font: inherit; font-size: .8rem; border: 1px solid var(--line); background: var(--bg); color: var(--fg); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
-
-/* footer */
-.sources { font-size: .9rem; color: var(--muted); }
-.sources ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
-.disclaimer { border-top: 1px solid var(--line); padding-top: 18px; font-size: .85rem; color: var(--muted); max-width: 72ch; }
-.tip { background: var(--accent-soft); border-radius: 14px; padding: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
-.tip a { background: var(--accent); color: var(--bg); text-decoration: none; padding: 8px 16px; border-radius: 999px; font-weight: 600; }
-@media (prefers-reduced-motion: no-preference) { .seg button, .presets button { transition: background .15s, color .15s; } }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<nav class="nav" aria-label="Site">
+  <div class="wrap">
+    <a class="brand" href="./">Aion<span>Tech</span></a>
+    <ul>
+      <li><a href="./" aria-current="page">Skins</a></li>
+      <li><a href="combat-power.html">Combat Power</a></li>
+      <li><a href="item-level.html">Item Level</a></li>
+    </ul>
+  </div>
+</nav>
 
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">AionTech · Unofficial AION 2 fan guide · Updated Oct 14, 2026</span>
+    <span class="eyebrow">Unofficial AION 2 fan guide · Updated Oct 14, 2026</span>
     <h1>Which skins cost <span class="q">Quna</span>, and which cost <span class="c">cash</span>?</h1>
-    <p>Quna can be bought with Kinah on the exchange, so a Quna skin is one you can earn by playing. Real-money skins can't be. This page sorts the shop so you know which is which before you start saving.</p>
+    <p>Quna can be bought with Kinah on the exchange, so a Quna skin is one you can earn by playing. Real-money skins can't be. Skins also add stats to your character, so they count toward Combat Power too.</p>
     <div class="summary" id="summary"></div>
   </div>
 </header>
@@ -165,7 +61,7 @@ dialog button { font: inherit; border: 1px solid var(--line); background: var(--
 
   <section aria-labelledby="list-h">
     <h2 id="list-h">Shop list</h2>
-    <p>Prices marked KR come from the Korean client's shop data. Global prices can differ slightly; outfit sets are reported at 2,200 Quna on global versus 2,500 in Korea.</p>
+    <p class="lead">Prices marked KR come from the Korean client's shop data. Global prices can differ slightly; outfit sets are reported at 2,200 Quna on global versus 2,500 in Korea.</p>
     <div class="filters" role="search">
       <input id="q" type="search" placeholder="Search a skin, e.g. Daeva, Bunny, Orb" aria-label="Search skins">
       <div class="seg" role="group" aria-label="Currency">
@@ -186,8 +82,8 @@ dialog button { font: inherit; border: 1px solid var(--line); background: var(--
 
   <section aria-labelledby="calc-h">
     <h2 id="calc-h">What will it cost me?</h2>
-    <p>Pick a Quna price to see the cheapest pack combination in dollars, or how much Kinah you need at today's exchange rate.</p>
-    <div class="calc">
+    <p class="lead">Pick a Quna price to see the cheapest pack combination in dollars, or how much Kinah you need at today's exchange rate.</p>
+    <div class="grid2">
       <div class="panel">
         <label for="need">Quna needed
           <input id="need" type="number" min="0" step="100" value="2500" inputmode="numeric">
@@ -238,8 +134,13 @@ dialog button { font: inherit; border: 1px solid var(--line); background: var(--
 // Set this to your Ko-fi / PayPal.me link to show the support box.
 const TIP_URL = "";
 
+// Pictures: put a screenshot in images/ named after the item (e.g. images/genesis-daeva.jpg)
+// and add that name here. Items without a picture show their initial instead.
+const HAS_IMG = new Set([]);
+const slug = (s) => s.replace(/\(.*?\)/g, "").toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const imgPath = (name) => `images/${slug(name)}.jpg`;
+
 const ITEMS = [
-  // Outfit sets
   ["Genesis Daeva", "Outfit set", "quna", "2,500 Quna", "KR"],
   ["Ascension Daeva", "Outfit set", "quna", "2,500 Quna", "KR"],
   ["Lunar Benediction", "Outfit set", "quna", "2,500 Quna", "KR"],
@@ -252,7 +153,6 @@ const ITEMS = [
   ["Monarch of Blood", "Outfit set", "cash", "$29.99", "Global · Halloween"],
   ["Midnight Witch", "Outfit set", "cash", "$29.99", "Global · Halloween"],
   ["Midnight Slasher", "Outfit set", "cash", "$29.99", "Global · Halloween"],
-  // Weapons
   ["Beach Buddies (bow, dagger, greatsword, mace, spellbook, orb)", "Weapon", "quna", "1,000 Quna", "KR"],
   ["Hdar's Precious Instrument", "Weapon", "quna", "1,000 Quna", "KR", "Bow"],
   ["Sniron's Precious Snack", "Weapon", "quna", "1,000 Quna", "KR", "Dagger"],
@@ -261,23 +161,19 @@ const ITEMS = [
   ["Tyron's Precious Diary", "Weapon", "quna", "1,000 Quna", "KR", "Spellbook"],
   ["Dukiron's Precious Ornament", "Weapon", "quna", "1,000 Quna", "KR", "Orb"],
   ["Halloween Night (one per class)", "Weapon", "cash", "$11.99", "Global · Halloween"],
-  // Wings
   ["Dawn Mist Wings", "Wings", "quna", "1,500 Quna", "KR"],
   ["Maid Ribbon Wings", "Wings", "both", "1,500 Quna or ₩29,000", "KR"],
   ["Woodland Bunny Bag Wings", "Wings", "cash", "₩29,000", "KR"],
-  // Shoulder
   ["Adorable Young Elim", "Shoulder", "quna", "300 Quna", "KR"],
   ["Woodland Young Elim", "Shoulder", "quna", "300 Quna", "KR"],
   ["Flowery Young Elim", "Shoulder", "quna", "300 Quna", "KR"],
   ["Urd's Squirrel", "Shoulder", "quna", "100 Quna", "KR"],
-  // Helmets
   ["Bunny Ears", "Helmet", "quna", "100 Quna", "KR"],
   ["Head Bow", "Helmet", "quna", "100 Quna", "KR"],
   ["Dark Maid Hairband", "Helmet", "quna", "100 Quna", "KR"],
   ["Dapper-O'-Lantern", "Helmet", "quna", "300 Quna", "Global · Halloween"],
   ["Jack-O'-Lantern", "Helmet", "quna", "300 Quna", "Global · Halloween"],
   ["Frankenstein Bolts", "Helmet", "quna", "300 Quna", "Global · Halloween"],
-  // Eyewear / facewear
   ["Cyber Glasses", "Eyewear", "quna", "300 Quna", "KR"],
   ["Pixel Glasses", "Eyewear", "quna", "100 Quna", "KR"],
   ["Sharp Monocle", "Eyewear", "quna", "100 Quna", "KR"],
@@ -296,28 +192,19 @@ const ITEMS = [
   ["Face Bandages", "Facewear", "quna", "300 Quna", "Global · Halloween"],
   ["Dracula Fangs", "Facewear", "quna", "300 Quna", "Global · Halloween"],
   ["Slasher's Muzzle", "Facewear", "quna", "300 Quna", "Global · Halloween"],
-  // Jewelry
   ["Soaring (earrings, necklace)", "Jewelry", "quna", "100 Quna each", "KR"],
   ["Midnight Teatime (earrings, necklace)", "Jewelry", "quna", "100 Quna each", "KR"],
   ["Rider's (earrings, necklace)", "Jewelry", "quna", "100 Quna each", "KR"],
 ].map(([name, type, cur, price, where, sub]) => ({ name, type, cur, price, where, sub }));
-
-// Pictures: put a screenshot in images/ named after the item (e.g. images/genesis-daeva.jpg)
-// and add that name here. Items without a picture show their initial instead.
-const HAS_IMG = new Set([]);
-const slug = (s) => s.replace(/\(.*?\)/g, "").toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-const imgPath = (name) => `images/${slug(name)}.jpg`;
 
 const CHIP = { quna: ["quna", "Quna"], cash: ["cash", "Cash only"], both: ["both", "Quna or cash"] };
 const $ = (s) => document.querySelector(s);
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let cur = "all";
 
-// summary pills
 const nQ = ITEMS.filter(i => i.cur !== "cash").length, nC = ITEMS.filter(i => i.cur === "cash").length;
 $("#summary").innerHTML = `<span><b class="num">${ITEMS.length}</b> items listed</span><span><b class="num">${nQ}</b> buyable with Quna</span><span><b class="num">${nC}</b> cash only</span>`;
 
-// type select
 const types = [...new Set(ITEMS.map(i => i.type))];
 $("#type").innerHTML = `<option value="all">All types</option>` + types.map(t => `<option>${t}</option>`).join("");
 
@@ -333,11 +220,10 @@ function render() {
   $("#count").textContent = `Showing ${list.length} of ${ITEMS.length}`;
   $("#rows").innerHTML = list.length ? list.map(i => {
     const [cls, label] = CHIP[i.cur];
-    const initial = esc(i.name.charAt(0));
     const pic = HAS_IMG.has(slug(i.name))
       ? `<button type="button" class="thumb" data-img="${imgPath(i.name)}" data-name="${esc(i.name)}" aria-label="View ${esc(i.name)}"><img src="${imgPath(i.name)}" alt="" loading="lazy"></button>`
-      : `<span class="thumb" aria-hidden="true">${initial}</span>`;
-    return `<tr><td><div class="item">${pic}<div>${esc(i.name)}${i.sub ? `<span class="note">${esc(i.sub)}</span>` : ""}</div></div></td><td>${i.type}</td><td><span class="chip ${cls}">${label}</span></td><td class="price num">${esc(i.price)}</td><td>${esc(i.where)}</td></tr>`;
+      : `<span class="thumb" aria-hidden="true">${esc(i.name.charAt(0))}</span>`;
+    return `<tr><td><div class="item">${pic}<div>${esc(i.name)}${i.sub ? `<span class="note">${esc(i.sub)}</span>` : ""}</div></div></td><td>${i.type}</td><td><span class="chip ${cls}">${label}</span></td><td class="price">${esc(i.price)}</td><td>${esc(i.where)}</td></tr>`;
   }).join("") : `<tr><td colspan="5" class="empty">No skins match. Try a shorter search or clear the filters.</td></tr>`;
 }
 document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
@@ -354,18 +240,17 @@ $("#q").addEventListener("input", render);
 $("#type").addEventListener("change", render);
 render();
 
-// countdown to the EU end date (Nov 25, 2026)
 (function () {
   const end = new Date("2026-11-25T00:00:00+01:00");
   const days = Math.ceil((end - new Date()) / 864e5);
   $("#countdown").textContent = days > 0 ? `About ${days} days left · ends Nov 24 (NA) / Nov 25 (EU)` : "This event has ended";
 })();
 
-// calculator: global Quna packs (USD, reported prices)
+// Global Quna packs (USD). 400 and 4,000 are reported prices; 1,000 and 2,000 are estimated at the same rate.
 const PACKS = [[400, 5.99], [1000, 14.99], [2000, 29.99], [4000, 59.99]];
 function cheapest(n) {
   if (n <= 0) return { cost: 0, combo: [] };
-  const unit = 200, max = Math.ceil(n / unit) + 20;           // allow some overshoot
+  const unit = 200, max = Math.ceil(n / unit) + 20;
   const best = Array(max + 1).fill(Infinity), pick = Array(max + 1).fill(-1);
   best[0] = 0;
   for (let a = 1; a <= max; a++) PACKS.forEach(([q, p], k) => {
@@ -393,6 +278,5 @@ calc();
 
 if (TIP_URL) { $("#tip-link").href = TIP_URL; $("#tip").hidden = false; }
 </script>
-
 </body>
 </html>

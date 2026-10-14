@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AionTech · AION 2 Item Level Guide</title>
+<meta name="description" content="AION 2 item level roadmap from level 45 to 2,800: every content threshold, where item level comes from, enhancement success rates, Substance Morph and Gear Transfer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+.where { display: grid; grid-template-columns: minmax(0, 220px) 1fr; gap: 20px; align-items: center; }
+@media (max-width: 600px) { .where { grid-template-columns: 1fr; } }
+.where .result { font-size: 1.3rem; }
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Site">
+  <div class="wrap">
+    <a class="brand" href="./">Aion<span>Tech</span></a>
+    <ul>
+      <li><a href="./">Skins</a></li>
+      <li><a href="combat-power.html">Combat Power</a></li>
+      <li><a href="item-level.html" aria-current="page">Item Level</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Guide · Level 45 to 2,800 · Updated Oct 14, 2026</span>
+    <h1>Item Level roadmap</h1>
+    <p>Item level is the total of your equipped gear and what's slotted into it. Content opens at fixed item levels, so the fastest route is to aim for the next threshold, not to max one piece. Enter your item level below to see what's open and what's next.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section aria-labelledby="where-h">
+    <h2 id="where-h">Where are you now?</h2>
+    <div class="panel where">
+      <label for="il">Your item level
+        <input id="il" type="number" min="0" step="1" value="1250" inputmode="numeric">
+      </label>
+      <div>
+        <div class="result" id="next"></div>
+        <div class="meter" aria-hidden="true"><i id="bar"></i></div>
+      </div>
+    </div>
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Item level</th><th>Unlocks</th></tr></thead>
+        <tbody id="gates"></tbody>
+      </table>
+    </div>
+    <p class="lead">Thresholds come from game data as reported by community guides. The 10-player Ludra raid is temporarily removed on global servers while NCSOFT updates it.</p>
+  </section>
+
+  <section aria-labelledby="add-h">
+    <h2 id="add-h">What adds item level</h2>
+    <div class="table-box">
+      <table>
+        <thead><tr><th>Source</th><th>Item level</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Gear pieces</td><td class="n">varies</td><td>Examples: Vakron armor 70, Nuakum armor 86, top crafted gear 102. Biggest single source.</td></tr>
+          <tr><td>Enhancement</td><td class="n">+1 per level</td><td>Spread it across all pieces; it adds the same on every slot.</td></tr>
+          <tr><td>Amplify</td><td class="n">+5 per level</td><td>Unique (gold) pieces only. Strong late-game boost.</td></tr>
+          <tr><td>Manastone lines</td><td class="n">+1 to +4</td><td>Grey 1, green 2, blue 3, yellow 4 per line.</td></tr>
+          <tr><td>Arcana cards</td><td class="n">+20 to +80</td><td>Common 20, Rare 40, Epic 60, Unique 80. Five slots, from Transcendence.</td></tr>
+          <tr><td>Clash Runes</td><td class="n">+40 each</td><td>Two slots. The first chest comes from side quests after level 45.</td></tr>
+          <tr><td>Daevanion points</td><td class="n">+1 per point</td><td>From sealed dungeons and regional quests.</td></tr>
+          <tr><td>Crafted Dragon Lord gear</td><td class="n">62 → 102</td><td>True Dragon Lord (Elyos) or Star Dragon Lord (Asmodian), upgraded in steps of 8.</td></tr>
+          <tr><td>Pantheon statues</td><td class="n">small</td><td>Better statues add a little. Exact amount unconfirmed.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="road-h">
+    <h2 id="road-h">The roadmap, stage by stage</h2>
+    <ol class="steps">
+      <li><div><span class="stage">Level 45 → 1,000 item level</span><h3>Finish the story and the rune quests</h3><ul><li>Complete the main story for a Unique weapon, plus the guard and bracelet from the last Ascension and Abyss quests.</li><li>Do the two side quests that give the Clash Rune chest.</li><li>Fill empty slots with elite set pieces from your home maps. Don't put good Manastones on them; you'll replace them.</li></ul></div></li>
+      <li><div><span class="stage">1,000 → 1,400</span><h3>Cheap, guaranteed upgrades</h3><ul><li>Clear green side quests and sealed dungeons for Daevanion points.</li><li>Morph the Noble Belt and Revelation Amulet up to Unique (item level 65 each).</li><li>Enhance weapon, guard and bracelet to +10, which can't fail, and add a Manastone line to each.</li><li>Enhance both Clash Runes to +1.</li><li>Quest gear alone is reported to reach about 1,400.</li></ul></div></li>
+      <li><div><span class="stage">1,400 → 2,100</span><h3>Vakron and Transcendence</h3><ul><li>Spend Odyle Energy on Vakron Sky Island for Unique armor at 70, or craft Dragon Lord pieces for slots that won't drop.</li><li>Enhance new pieces to about +5–7 and slot Manastones.</li><li>At 1,600, start Transcendence and fill Arcana slots. This is the biggest jump in this stage.</li></ul></div></li>
+      <li><div><span class="stage">2,100 → 2,800</span><h3>Horn Den, Fire Temple and Amplify</h3><ul><li>Farm Ferocious Horn Den for Nuakum armor (86) and Fire Temple for accessories.</li><li>Use Gear Change Vouchers for missing slots, guard first.</li><li>Amplify your Unique pieces (+5 per level).</li><li>From here, put more into Combat Power (Soul Binding, better Manastones); see the <a href="combat-power.html">Combat Power guide</a>.</li></ul></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="enh-h">
+    <h2 id="enh-h">Enhancement rules</h2>
+    <div class="grid2">
+      <div class="table-box">
+        <table style="min-width: 0">
+          <thead><tr><th>Grade</th><th>Max</th><th>Manastone slots</th></tr></thead>
+          <tbody>
+            <tr><td>Common (white)</td><td class="n">+5</td><td class="n">1</td></tr>
+            <tr><td>Rare (green)</td><td class="n">+5</td><td class="n">2</td></tr>
+            <tr><td>Epic (blue)</td><td class="n">+10</td><td class="n">3</td></tr>
+            <tr><td>Unique (gold)</td><td class="n">+15, then +20</td><td class="n">4</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-box">
+        <table style="min-width: 0">
+          <thead><tr><th>Attempt</th><th>Reported success</th></tr></thead>
+          <tbody>
+            <tr><td>+1 to +10</td><td class="n">100%</td></tr>
+            <tr><td>+11</td><td class="n">65%</td></tr>
+            <tr><td>+12</td><td class="n">50%</td></tr>
+            <tr><td>+13</td><td class="n">35%</td></tr>
+            <tr><td>+14</td><td class="n">25%</td></tr>
+            <tr><td>+15</td><td class="n">20%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="prose">
+      <ul>
+        <li><strong>Gear never breaks.</strong> A failed attempt costs the stones and Kinah, and the item keeps its current level.</li>
+        <li><strong>Failures build pity.</strong> Each failure adds about 5% to the next try at that level.</li>
+        <li><strong>Costs climb steeply.</strong> On item level 102 gold gear, one +10 → +11 attempt is about 360,000 Kinah and 9,310 stones.</li>
+        <li><strong>The +16 to +20 stage</strong> opens on gold gear from item level 54 and uses its own material.</li>
+        <li><strong>Clash Runes are the exception.</strong> A failed rune enhancement can lower its level. Enhance a spare rune, then swap it in.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="systems-h">
+    <h2 id="systems-h">Morph, Transfer and old gear</h2>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Substance Morph</h3>
+        <p>For the amulet and belt. Enhance to +10, take the piece off, then morph it in the Cube to the next grade. It always succeeds and resets to +0. Go Rare → Epic → Unique, then stop enhancing.</p>
+      </div>
+      <div class="panel">
+        <h3>Gear Transfer</h3>
+        <p>Moves enhancement and Soul Binding onto a new piece of the same type. Manastones, Theostones and Potential don't move. You can't transfer from a higher grade to a lower one. Worth it only for heavily enhanced pieces.</p>
+      </div>
+      <div class="panel">
+        <h3>Old gear</h3>
+        <p>Extracting returns Enhance Stones and unlocks the look in your Wardrobe, but destroys slotted Manastones. Keep pieces you plan to transfer and gold pieces with good Soul Binding. Otherwise hand them to Supply Requests.</p>
+      </div>
+    </div>
+    <div class="callout warn"><p>Sources disagree on a few details, such as whether +16 to +20 transfers and whether Manastone rerolls let you lock slots. Check the in-game window before you confirm.</p></div>
+  </section>
+
+  <section aria-labelledby="src-h" class="sources">
+    <h2 id="src-h">Sources</h2>
+    <p>Written for AionTech from these guides, compared and checked against each other:</p>
+    <ul>
+      <li><a href="https://corpus.gg/blog/aion-2/gear-score-guide" target="_blank" rel="noopener">Corpus: Item level thresholds</a></li>
+      <li><a href="https://daevaguides.com/en/guides/gear-progression/" target="_blank" rel="noopener">Daeva Guides: Gear progression</a></li>
+      <li><a href="https://metabot.gg/en/aion-2/guides/gear-progression-guide" target="_blank" rel="noopener">Metabot: Level 45 upgrade order</a></li>
+      <li><a href="https://games.gg/aion-2/guides/aion-2-item-level-guide/" target="_blank" rel="noopener">games.gg: Item level guide</a></li>
+      <li><a href="https://aion2.run/en/astuces/equipement-progression-ilvl" target="_blank" rel="noopener">aion2.run: Item level tiers</a></li>
+      <li><a href="https://skycoach.gg/blog/aion-2/articles/aion-2-gearing-guide" target="_blank" rel="noopener">Skycoach: Gearing guide</a></li>
+      <li><a href="https://www.gametoc.co.kr/news/articleView.html?idxno=104231" target="_blank" rel="noopener">GameToc (KR): Fast item level growth</a></li>
+      <li><a href="https://www.inven.co.kr/webzine/news/?news=311703&amp;site=aion2" target="_blank" rel="noopener">Inven (KR): Road to 2,000</a></li>
+    </ul>
+    <p class="disclaimer">Unofficial fan page. Not affiliated with or endorsed by NCSOFT. AION is a trademark of NCSOFT Corporation.</p>
+  </section>
+</main>
+
+<script>
+const GATES = [
+  [700, "Krao Cave Conquest · Draupnir Exploration and Conquest"],
+  [1000, "The Abyss (Chaotic Lower Reshanta) · Ascension Trial Easy"],
+  [1400, "Vakron Sky Island · Urugugu Canyon Conquest"],
+  [1500, "Ascension Trial Normal"],
+  [1600, "Transcendence stage 1 (Arcana)"],
+  [1900, "Transcendence stage 2"],
+  [2000, "Ascension Trial Hard"],
+  [2100, "Ferocious Horn Den · Fire Temple Conquest"],
+  [2200, "Transcendence stage 3"],
+  [2500, "Transcendence stage 4 · Ascension Trial highest difficulty"],
+  [2800, "Abyssal Forge: Ludra raid (temporarily removed on global)"],
+];
+const $ = (s) => document.querySelector(s);
+try { const v = localStorage.getItem("at-il"); if (v) $("#il").value = v; } catch (e) {}
+function update() {
+  const il = Math.max(0, Math.round(+$("#il").value || 0));
+  try { localStorage.setItem("at-il", il); } catch (e) {}
+  const nextIdx = GATES.findIndex(([g]) => g > il);
+  $("#gates").innerHTML = GATES.map(([g, what], i) =>
+    `<tr class="${g <= il ? "done" : i === nextIdx ? "next" : ""}"><td class="n">${g.toLocaleString()}</td><td>${what}</td></tr>`).join("");
+  if (nextIdx === -1) { $("#next").innerHTML = `Everything is open.<small>Focus on Combat Power from here.</small>`; $("#bar").style.width = "100%"; return; }
+  const [g, what] = GATES[nextIdx], prev = nextIdx ? GATES[nextIdx - 1][0] : 0;
+  $("#next").innerHTML = `${(g - il).toLocaleString()} to go<small>Next: ${what} at ${g.toLocaleString()}</small>`;
+  $("#bar").style.width = Math.min(100, Math.max(0, (il - prev) / (g - prev) * 100)) + "%";
+}
+$("#il").addEventListener("input", update);
+update();
+</script>
+</body>
+</html>
