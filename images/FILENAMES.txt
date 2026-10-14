@@ -1,0 +1,56 @@
+Save each skin screenshot as a .jpg with exactly this name:
+
+genesis-daeva.jpg   <- Genesis Daeva
+ascension-daeva.jpg   <- Ascension Daeva
+lunar-benediction.jpg   <- Lunar Benediction
+shadowlight-wind.jpg   <- Shadowlight Wind
+loose-fit-streetwear.jpg   <- Loose-Fit Streetwear
+no-nonsense-maid.jpg   <- No-Nonsense Maid
+dreamy-day-uniform.jpg   <- Dreamy Day Uniform
+tech-biker.jpg   <- Tech Biker
+snowy-sheer.jpg   <- Snowy Sheer
+monarch-of-blood.jpg   <- Monarch of Blood
+midnight-witch.jpg   <- Midnight Witch
+midnight-slasher.jpg   <- Midnight Slasher
+beach-buddies.jpg   <- Beach Buddies (bow, dagger, greatsword, mace, spellbook, orb)
+hdars-precious-instrument.jpg   <- Hdar's Precious Instrument
+snirons-precious-snack.jpg   <- Sniron's Precious Snack
+lirons-precious-leek.jpg   <- Liron's Precious Leek
+kashurons-precious-toy.jpg   <- Kashuron's Precious Toy
+tyrons-precious-diary.jpg   <- Tyron's Precious Diary
+dukirons-precious-ornament.jpg   <- Dukiron's Precious Ornament
+halloween-night.jpg   <- Halloween Night (one per class)
+dawn-mist-wings.jpg   <- Dawn Mist Wings
+maid-ribbon-wings.jpg   <- Maid Ribbon Wings
+woodland-bunny-bag-wings.jpg   <- Woodland Bunny Bag Wings
+adorable-young-elim.jpg   <- Adorable Young Elim
+woodland-young-elim.jpg   <- Woodland Young Elim
+flowery-young-elim.jpg   <- Flowery Young Elim
+urds-squirrel.jpg   <- Urd's Squirrel
+bunny-ears.jpg   <- Bunny Ears
+head-bow.jpg   <- Head Bow
+dark-maid-hairband.jpg   <- Dark Maid Hairband
+dapper-o-lantern.jpg   <- Dapper-O'-Lantern
+jack-o-lantern.jpg   <- Jack-O'-Lantern
+frankenstein-bolts.jpg   <- Frankenstein Bolts
+cyber-glasses.jpg   <- Cyber Glasses
+pixel-glasses.jpg   <- Pixel Glasses
+sharp-monocle.jpg   <- Sharp Monocle
+oversized-round-glasses.jpg   <- Oversized Round Glasses
+silver-line-glasses.jpg   <- Silver Line Glasses
+silver-face-chain.jpg   <- Silver Face Chain
+death-mask.jpg   <- Death Mask
+tears-of-blood.jpg   <- Tears of Blood
+vampire-night.jpg   <- Vampire Night
+ghost-tattoo.jpg   <- Ghost Tattoo
+clown-facepaint.jpg   <- Clown Facepaint
+pumpkin-clown.jpg   <- Pumpkin Clown
+pumpkin-cutie.jpg   <- Pumpkin Cutie
+black-cat-facepaint.jpg   <- Black Cat Facepaint
+red-scar-facepaint.jpg   <- Red Scar Facepaint
+face-bandages.jpg   <- Face Bandages
+dracula-fangs.jpg   <- Dracula Fangs
+slashers-muzzle.jpg   <- Slasher's Muzzle
+soaring.jpg   <- Soaring (earrings, necklace)
+midnight-teatime.jpg   <- Midnight Teatime (earrings, necklace)
+riders.jpg   <- Rider's (earrings, necklace)
