@@ -21,11 +21,30 @@
     <a class="brand" href="./">Aion<span>Tech</span></a>
     <ul>
       <li><a href="./">Skins</a></li>
-      <li><a href="combat-power.html">Combat Power</a></li>
-      <li><a href="item-level.html" aria-current="page">Item Level</a></li>
-      <li><a href="classes.html">Classes</a></li>
-      <li><a href="leveling.html">Leveling</a></li>
-      <li><a href="kinah.html">Kinah</a></li>
+      <li class="menu">
+        <details>
+          <summary class="active">Guides</summary>
+          <div class="menu-panel">
+          <div class="menu-group"><span class="eyebrow">Get stronger</span>
+            <a href="combat-power.html">Combat Power</a>
+            <a href="item-level.html" aria-current="page">Item Level</a>
+            <a href="arcana.html">Arcana</a>
+            <a href="pets.html">Pets &amp; Genus Insight</a>
+          </div>
+          <div class="menu-group"><span class="eyebrow">Endgame</span>
+            <a href="nightmare.html">Nightmare</a>
+            <a href="abyss-points.html">Abyss Points</a>
+          </div>
+          <div class="menu-group"><span class="eyebrow">Getting started</span>
+            <a href="classes.html">Classes</a>
+            <a href="leveling.html">Leveling 1–45</a>
+            <a href="kinah.html">Kinah</a>
+            <a href="server-transfer.html">Server Transfer</a>
+          </div>
+            <a class="menu-all" href="guides.html">All guides →</a>
+          </div>
+        </details>
+      </li>
       <li><a href="server-transfer.html">Server Transfer</a></li>
     </ul>
   </div>
@@ -196,5 +215,6 @@ function update() {
 $("#il").addEventListener("input", update);
 update();
 </script>
+<script data-menu-close>document.addEventListener("click",e=>{document.querySelectorAll(".menu details[open]").forEach(d=>{if(!d.contains(e.target))d.open=false})});document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".menu details[open]").forEach(d=>d.open=false)});</script>
 </body>
 </html>

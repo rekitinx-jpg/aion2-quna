@@ -61,6 +61,22 @@ h3 { font-size: 1.05rem; margin: 0; }
 .nav ul a:hover { color: var(--fg); border-color: var(--line); }
 .nav ul a[aria-current="page"] { color: #fff; background: linear-gradient(180deg, #5aa8ff, var(--accent-deep)); border-color: #9fd2ff; box-shadow: 0 0 14px rgba(90, 168, 255, .45); }
 
+/* guides dropdown */
+.menu { position: relative; }
+.menu summary { list-style: none; cursor: pointer; padding: 6px 14px; border-radius: 6px; color: var(--muted); font-weight: 600; font-size: .92rem; border: 1px solid transparent; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu summary::after { content: " ▾"; font-size: .8em; }
+.menu summary:hover, .menu details[open] summary { color: var(--fg); border-color: var(--line); }
+.menu summary.active { color: #fff; background: linear-gradient(180deg, #5aa8ff, var(--accent-deep)); border-color: #9fd2ff; box-shadow: 0 0 14px rgba(90, 168, 255, .45); }
+.menu-panel { position: absolute; right: 0; top: calc(100% + 8px); width: min(560px, calc(100vw - 32px)); background: #0d1828; border: 1px solid var(--line-strong); border-radius: 10px; padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; box-shadow: 0 16px 40px rgba(0, 0, 0, .5), 0 0 24px rgba(90, 168, 255, .2); z-index: 10; }
+.menu-group { display: grid; gap: 2px; align-content: start; }
+.menu-group .eyebrow { margin-bottom: 4px; }
+.nav .menu-panel a { display: block; padding: 5px 8px; border-radius: 6px; color: var(--fg); text-decoration: none; font-size: .92rem; font-weight: 500; border: 0; }
+.nav .menu-panel a:hover { background: var(--accent-soft); }
+.nav .menu-panel a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); box-shadow: none; }
+.nav .menu-panel a.menu-all { grid-column: 1 / -1; border-top: 1px solid var(--line); border-radius: 0; padding-top: 10px; color: var(--accent); font-weight: 600; }
+@media (max-width: 560px) { .menu-panel { position: fixed; left: 16px; right: 16px; top: 56px; width: auto; } }
+
 /* hero */
 .hero { border-bottom: 1px solid var(--line); position: relative; overflow: hidden;
   background:

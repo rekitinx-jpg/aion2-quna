@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AionTech · AION 2 Guides</title>
+<meta name="description" content="All AionTech guides for AION 2 global: Combat Power, item level, Arcana, pets and Genus Insight, Nightmare, Abyss Points, leveling, Kinah, classes and server transfer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.card { text-decoration: none; color: var(--fg); }
+.card:hover { border-color: var(--accent); box-shadow: 0 0 18px rgba(124, 198, 255, .25); }
+.card h3 { font-family: var(--font-display); font-size: 1.15rem; color: #f2f6ff; }
+.card p { margin: 0; color: var(--muted); font-size: .92rem; }
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Site">
+  <div class="wrap">
+    <a class="brand" href="./">Aion<span>Tech</span></a>
+    <ul>
+      <li><a href="./">Skins</a></li>
+      <li class="menu">
+        <details>
+          <summary class="active">Guides</summary>
+          <div class="menu-panel">
+          <div class="menu-group"><span class="eyebrow">Get stronger</span>
+            <a href="combat-power.html">Combat Power</a>
+            <a href="item-level.html">Item Level</a>
+            <a href="arcana.html">Arcana</a>
+            <a href="pets.html">Pets &amp; Genus Insight</a>
+          </div>
+          <div class="menu-group"><span class="eyebrow">Endgame</span>
+            <a href="nightmare.html">Nightmare</a>
+            <a href="abyss-points.html">Abyss Points</a>
+          </div>
+          <div class="menu-group"><span class="eyebrow">Getting started</span>
+            <a href="classes.html">Classes</a>
+            <a href="leveling.html">Leveling 1–45</a>
+            <a href="kinah.html">Kinah</a>
+            <a href="server-transfer.html">Server Transfer</a>
+          </div>
+            <a class="menu-all" href="guides.html" aria-current="page">All guides →</a>
+          </div>
+        </details>
+      </li>
+      <li><a href="server-transfer.html">Server Transfer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Unofficial AION 2 fan guides · Global servers</span>
+    <h1>All guides</h1>
+    <p>Every guide is written from several community sources and official notices, checked against each other. Numbers only one source reported are marked as reported.</p>
+  </div>
+</header>
+
+<main class="wrap" id="hub"></main>
+
+<script>
+const GROUPS = [
+  ["Get stronger", [
+    ["combat-power.html", "Combat Power", "Every CP source, the order to upgrade in, and a daily checklist."],
+    ["item-level.html", "Item Level", "Check what your item level unlocks, plus the roadmap to 2,800."],
+    ["arcana.html", "Arcana", "Slots, grades, where cards drop, and Vigor vs Magic."],
+    ["pets.html", "Pets & Genus Insight", "Souls per level, the five genera, rerolls and Heroic odds."],
+  ]],
+  ["Endgame content", [
+    ["nightmare.html", "Nightmare", "All 7 bosses, how attempts work, and what to buy."],
+    ["abyss-points.html", "Abyss Points", "What AP buys, every AP source, sieges and ranks."],
+  ]],
+  ["Getting started", [
+    ["classes.html", "Classes", "All 8 classes compared, with a quick class picker."],
+    ["leveling.html", "Leveling 1–45", "Zone route for both factions and what unlocks when."],
+    ["kinah.html", "Kinah", "Bound vs tradeable Kinah and a daily routine."],
+    ["server-transfer.html", "Server Transfer", "Free until Oct 28: rules, hours and what moves."],
+  ]],
+  ["Shop", [
+    ["./", "Skins: Quna or Cash?", "Which skins you can earn with Quna, and a cost calculator."],
+  ]],
+];
+document.getElementById("hub").innerHTML = GROUPS.map(([g, items]) => `
+  <section><h2>${g}</h2><div class="cards">${items.map(([href, t, d]) =>
+    `<a class="panel card" href="${href}"><h3>${t}</h3><p>${d}</p></a>`).join("")}</div></section>`).join("") +
+  `<section class="sources"><p class="disclaimer">Unofficial fan page. Not affiliated with or endorsed by NCSOFT. AION is a trademark of NCSOFT Corporation.</p></section>`;
+</script>
+<script data-menu-close>document.addEventListener("click",e=>{document.querySelectorAll(".menu details[open]").forEach(d=>{if(!d.contains(e.target))d.open=false})});document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".menu details[open]").forEach(d=>d.open=false)});</script>
+</body>
+</html>
